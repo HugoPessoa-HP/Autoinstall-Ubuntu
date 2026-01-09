@@ -10,6 +10,9 @@ autoinstall:
     keyboard:
         layout: br
     timezone: "America/Sao_Paulo"
+    packages: 
+        - git
+        - wget
     storage:
         network:
             version: 2

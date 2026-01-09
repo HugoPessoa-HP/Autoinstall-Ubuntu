@@ -21,10 +21,10 @@ autoinstall:
                     dhcp6: true
         config:
             - ptable: gpt
-              wipe: superblock
               preserve: false
               name: disk0
               grub_device: true
+              serial: S2RSJ9KC340650
               id: sda
               type: disk
             - device: sda

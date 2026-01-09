@@ -11,7 +11,6 @@ autoinstall:
         layout: br
     timezone: "America/Sao_Paulo"
     storage:
-        version: 1
         config:
             - ptable: gpt
               wipe: superblock
@@ -63,7 +62,7 @@ autoinstall:
               type: partition
             - name: cryptlvm
               volume: partition-2
-              key: 123
+              key: "123"
               id: dm_crypt-lvm
               type: dm_crypt
             - name: VolGroup
@@ -74,7 +73,7 @@ autoinstall:
               type: lvm_volgroup
             - name: lv_root
               volgroup: lvm_volgroup-0
-              size: 30GB
+              size: -1
               wipe: superblock
               preserve: false
               id: lvm_partition-root
@@ -94,4 +93,3 @@ autoinstall:
         install: true
     updates: all
     shutdown: reboot
-

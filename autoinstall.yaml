@@ -11,6 +11,11 @@ autoinstall:
         layout: br
     timezone: "America/Sao_Paulo"
     storage:
+        network:
+            version: 2
+            ethernets:
+                enp0s31f6:
+                    dhcp6: true
         config:
             - ptable: gpt
               wipe: superblock

@@ -24,12 +24,13 @@ autoinstall:
               preserve: false
               name: disk0
               grub_device: true
+              path: /dev/sda
+              wipe: superblock
               serial: S2RSJ9KC340650
               id: sda
               type: disk
             - device: sda
               size: 1GB
-              wipe: superblock
               flag: boot
               number: 1
               preserve: false
@@ -47,7 +48,6 @@ autoinstall:
               type: mount
             - device: sda
               size: 2GB
-              wipe: superblock
               number: 2
               preserve: false
               id: partition-1
@@ -63,7 +63,6 @@ autoinstall:
               type: mount
             - device: sda
               size: -1
-              wipe: superblock
               number: 3
               preserve: false
               id: partition-2

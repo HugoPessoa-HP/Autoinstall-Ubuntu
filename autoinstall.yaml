@@ -25,7 +25,6 @@ autoinstall:
               name: disk0
               grub_device: true
               wipe: superblock
-              serial: S2RSJ9KC340650
               id: sda
               type: disk
             - device: sda

@@ -71,7 +71,7 @@ autoinstall:
               type: partition
             - name: cryptlvm
               volume: partition-2
-              key: "123"
+              key: 123
               id: dm_crypt-lvm
               type: dm_crypt
             - name: VolGroup

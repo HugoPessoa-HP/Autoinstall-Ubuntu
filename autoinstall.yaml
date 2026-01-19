@@ -13,6 +13,11 @@ autoinstall:
     packages: 
         - git
         - wget
+    network:
+      version: 2
+      ethernets:
+          enp0s31f6:
+              dhcp6: true
     storage:
         config:
             - ptable: gpt
